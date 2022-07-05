@@ -1,0 +1,33 @@
+{
+    "name": "Script Tracker",
+    "version": "2.1",
+    "manifest_version": 3,
+    "action":{
+       
+        "default_icon":"logo.png",
+        "default_popup":"popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "http://*/*",
+            "https://*/*"
+          ],
+          "js": [
+            "content.js"
+          ],
+          "run_at": "document_end"
+        }
+      ],
+
+
+    "icons":{
+        "128": "logo.png",
+        "256":"logo-bw.png"
+
+    },
+    "permissions":["activeTab"]
+    
+
+
+}
